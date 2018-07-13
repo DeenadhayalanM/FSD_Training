@@ -1,0 +1,5 @@
+package com.assignment.eight.dto;
+
+public enum Menu {
+	ADDBOOK,ADDSUBJECT,DELETESUBJECT,DELETEBOOK,SEARCHBOOK,SEARCHSUBJECT,QUIT;
+}
