@@ -79,7 +79,7 @@ public class SubjectDAOSerializationImpl implements ISubjectDAO {
 	public void save() throws SubjectException{
 		try(ObjectOutputStream fout=new ObjectOutputStream(
 				new FileOutputStream(DATA_STORE_FILE_NAME))) {
-			fout.writeObject(subjects);
+			fout.writeObject(subjecs);
 			logger.info("Subject written into file");			
 		} catch (IOException exp) {
 			logger.error(exp);

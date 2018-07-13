@@ -194,9 +194,7 @@ public class assignmentMain {
 		System.out.print("Book publishDate(dd-MM-yyyy): ");
 		String pubDtStr = scan.next();
 		b.setPublishDate(LocalDate.parse(pubDtStr, dtFormater));
-		s.setBooks((Set<Book>) b);
-		//Long bookId=subService
-		
+		subjService.addBook(sub, b);
 	}
 
 }
